@@ -24,6 +24,13 @@ app.config.globalProperties.$projects = [
 		github: 'https://github.com/scion-softworks/Muon',
 		image: 'https://raw.githubusercontent.com/scion-softworks/Muon/refs/heads/master/public/logo.svg',
 		docs: 'https://github.com/scion-softworks/Muon/blob/master/README.md'
+	},
+	{
+		name: 'PriorityQueue',
+		description:
+			'PriorityQueue is a simple priority queue typescript implementation with both MinHeapPriorityQueue and MaxHeapPriorityQueue. Both of them inherit the same base PriorityQueue class',
+		github: 'https://github.com/scion-softworks/PriorityQueue',
+		image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPMwSiKxkkg3XpuyWqi_GgixTA5BSKnRj0A&s',
 	}
 ]
 
