@@ -17,13 +17,13 @@
 				</router-link>
 			</li>
 			<li>
-				<a
-					href="#"
+				<router-link
+					to="/contribute"
 					target="_blank"
 					class="flex items-center gap-1 font-sans text-base font-medium text-blue-gray-800 transition-colors hover:text-blue-600 focus:text-blue-600"
 				>
 					Contribute
-				</a>
+				</router-link>
 			</li>
 			<li>
 				<a
