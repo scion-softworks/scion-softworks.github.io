@@ -1,19 +1,21 @@
 <template>
-	<div class="min-h-screen">
+	<div class="flex flex-col min-h-screen">
 		<!-- Add to navigation -->
 		<NavBar />
 
 		<!-- Contact Section -->
-		<section id="contact" class="min-h-[calc(100vh-20rem)] py-16 px-6 bg-white">
+		<section id="contact" class="min-h-screen py-16 px-6 bg-white">
 			<div class="max-w-4xl mx-auto animate-fade-in-up">
-				<h2 class="pt-16 text-3xl font-bold text-center mb-12">
-					Get in Touch
+				<h2
+					class="pt-16 text-3xl font-bold text-center mb-12 drop-shadow-md"
+				>
+					Contact Me
 				</h2>
 
 				<div class="grid md:grid-cols-2 gap-8">
 					<!-- Discord Card -->
 					<div
-						class="p-8 border rounded-lg bg-sky-50 hover:bg-sky-100 transition-colors"
+						class="p-8 border rounded-lg bg-sky-50 hover:bg-indigo-100 transition-colors"
 					>
 						<div class="text-center">
 							<div class="flex justify-center mb-4">
@@ -53,7 +55,7 @@
 									</svg>
 								</button>
 							</div>
-							<p class="text-sm text-blue-gray-600 mt-2">
+							<p class="text-lg text-blue-gray-600 mt-2">
 								Direct message for inquiries
 							</p>
 						</div>
@@ -61,7 +63,7 @@
 
 					<!-- Roblox Card -->
 					<div
-						class="p-8 border rounded-lg bg-sky-50 hover:bg-sky-100 transition-colors"
+						class="p-8 border rounded-lg bg-sky-50 hover:bg-indigo-100 transition-colors"
 					>
 						<div class="text-center">
 							<div class="flex justify-center mb-4">
