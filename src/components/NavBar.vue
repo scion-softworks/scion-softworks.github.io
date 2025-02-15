@@ -1,0 +1,47 @@
+<template>
+	<nav
+		class="fixed w-full bg-sky-100 py-4 px-6 border-b border-blue-gray-200 z-50"
+	>
+		<div
+			class="flex flex-wrap items-center justify-between max-w-6xl mx-auto"
+		>
+			<a href="/">
+				<span class="text-2xl font-bold text-blue-gray-800">{{
+					orgName
+				}}</span>
+			</a>
+			<div class="flex gap-6 mt-2 md:mt-0">
+				<router-link
+					to="/contact"
+					class="text-blue-gray-800 hover:text-blue-600 transition-colors"
+				>
+					Contact
+				</router-link>
+				<router-link
+					to="/projects"
+					class="text-blue-gray-800 hover:text-blue-600 transition-colors"
+				>
+					Projects
+				</router-link>
+				<router-link
+					to="/docs"
+					class="text-blue-gray-800 hover:text-blue-600 transition-colors"
+				>
+					Documentation
+				</router-link>
+				<router-link
+					to="/community"
+					class="text-blue-gray-800 hover:text-blue-600 transition-colors"
+				>
+					Community
+				</router-link>
+			</div>
+		</div>
+	</nav>
+</template>
+
+<script>
+export default {
+	name: 'NavBar'
+};
+</script>
