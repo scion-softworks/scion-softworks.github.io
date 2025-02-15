@@ -12,10 +12,10 @@
 			</a>
 			<div class="flex gap-6 mt-2 md:mt-0">
 				<router-link
-					to="/contact"
+					to="/contacts"
 					class="text-blue-gray-800 hover:text-blue-600 transition-colors"
 				>
-					Contact
+					Contacts
 				</router-link>
 				<router-link
 					to="/projects"
