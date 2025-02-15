@@ -25,6 +25,7 @@ jobs:
         run: |
           npm ci
           npm i gh-pages@6.3.0
+          npm audit fix
 
       - name: Build project
         run: npm run build
