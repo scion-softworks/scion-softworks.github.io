@@ -9,13 +9,12 @@
 		</p>
 		<ul class="flex flex-wrap items-center gap-y-2 gap-x-6">
 			<li>
-				<a
-					href="/contacts"
-					target="_blank"
+				<router-link
+					to="/contacts"
 					class="flex items-center gap-1 font-sans text-base font-medium text-blue-gray-800 transition-colors hover:text-blue-600 focus:text-blue-600"
 				>
 					Contacts
-				</a>
+				</router-link>
 			</li>
 			<li>
 				<a
@@ -28,7 +27,7 @@
 			</li>
 			<li>
 				<a
-					href="https://github.com"
+					href="https://github.com/scion-softworks"
 					target="_blank"
 					class="flex items-center gap-1 font-sans text-base font-medium text-blue-gray-800 transition-colors hover:text-blue-600 focus:text-blue-600"
 				>
