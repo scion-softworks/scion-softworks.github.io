@@ -1,5 +1,5 @@
 <template>
-	<div class="min-h-screen">
+	<div class="flex flex-col min-h-screen">
 		<!-- Navigation -->
 		<NavBar />
 
@@ -13,21 +13,21 @@
 				>
 					Open Source Tools for
 					<span class="text-red-600">Roblox</span>
-          <span class="text-blue-500"> Developers</span>
+					<span class="text-blue-500"> Developers</span>
 				</h1>
 				<p class="text-xl text-blue-gray-800 mb-8 animate-fade-in-up">
 					Building powerful, community-driven solutions for Luau and
 					Roblox Studio
 				</p>
 				<div class="flex justify-center gap-4 animate-fade-in-up">
-					<a
-						href="#projects"
+					<router-link
+						to="/projects"
 						class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
 					>
 						View Projects
-					</a>
+					</router-link>
 					<a
-						href="https://github.com"
+						href="https://github.com/scion-softworks"
 						target="_blank"
 						class="border-2 border-blue-600 text-black px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors flex items-center gap-2"
 					>
@@ -75,7 +75,7 @@
 
 		<!-- Projects Section -->
 		<section
-			class="py-16 px-6 bg-gradient-to-b from-white to-50% to-indigo-100"
+			class="py-16 px-6 bg-sky-50"
 		>
 			<div class="max-w-6xl mx-auto">
 				<h2
@@ -85,36 +85,17 @@
 				</h2>
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					<div
-						v-for="(image, index) in images.slice(0, 6)"
+						v-for="(project, index) in projects"
 						:key="index"
 						class="bg-white rounded-lg shadow-md overflow-hidden animate-fade-in-up"
 					>
-						<img
-							:src="image"
-							alt="Project screenshot"
-							class="w-full h-48 object-cover"
+						<ProjectCard
+							:name="project.name"
+							:description="project.description"
+							:image="project.image"
+							:github="project.github"
+							:docs="project.docs"
 						/>
-						<div class="p-6">
-							<h3 class="text-xl font-semibold mb-2">
-								Project {{ index + 1 }}
-							</h3>
-							<p class="text-blue-gray-800 mb-4">
-								A powerful Luau library for Roblox
-								development...
-							</p>
-							<div class="flex gap-3">
-								<a
-									href="#"
-									class="text-blue-600 hover:text-blue-700"
-									>GitHub</a
-								>
-								<a
-									href="#"
-									class="text-blue-600 hover:text-blue-700"
-									>Docs</a
-								>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -127,22 +108,20 @@
 
 <script>
 import FeatureCard from '@/components/FeatureCard.vue';
+import ProjectCard from '@/components/ProjectCard.vue';
 import NavBar from '@/components/NavBar.vue';
 import FooterBar from '@/components/FooterBar.vue';
 
 export default {
 	name: 'HomePage',
 	components: {
-		FeatureCard, NavBar, FooterBar
+		FeatureCard,
+		NavBar,
+		FooterBar,
+		ProjectCard
 	},
 	data() {
-		return {
-			images: Array.from(
-				{ length: 6 },
-				(_, index) =>
-					`https://picsum.photos/200/300?random=${index + 1}`
-			)
-		};
+		return {};
 	},
 	mounted() {
 		const elements = document.querySelectorAll('.animate-fade-in-up');
@@ -165,5 +144,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
