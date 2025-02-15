@@ -20,12 +20,12 @@
 					Roblox Studio
 				</p>
 				<div class="flex justify-center gap-4 animate-fade-in-up">
-					<router-link
-						to="/projects"
-						class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+					<button
+						@click="scrollTo($refs.featured)"
+						class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
 					>
 						View Projects
-					</router-link>
+					</button>
 					<a
 						href="https://github.com/scion-softworks"
 						target="_blank"
@@ -76,6 +76,7 @@
 		<!-- Projects Section -->
 		<section
 			class="py-16 px-6 bg-sky-50"
+			ref="featured"
 		>
 			<div class="max-w-6xl mx-auto">
 				<h2
@@ -140,6 +141,14 @@ export default {
 		elements.forEach((element) => {
 			observer.observe(element);
 		});
+	},
+	methods: {
+		scrollTo: (element) => {
+			window.scrollTo({
+				top: element.offsetTop,
+				behavior: 'smooth'
+			})
+		}
 	}
 };
 </script>
