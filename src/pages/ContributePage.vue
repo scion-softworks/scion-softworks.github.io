@@ -201,6 +201,7 @@
 									>
 										{{ contributor.login }}
 									</a>
+									<p class="opacity-50">{{ contributor.contributions }} commits made</p>
 								</div>
 							</div>
 						</div>
