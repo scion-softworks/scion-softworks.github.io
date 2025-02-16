@@ -128,17 +128,6 @@
 									</svg>
 									BTC Wallet
 								</button>
-								<!-- <a
-									href="https://buymeacoffee.com/scionsoftworks"
-									target="_blank"
-									class="flex items-center justify-center gap-2 px-6 py-2 bg-yellow-300 text-black rounded-lg transition-colors"
-								>
-									<img
-										src="@/assets/buymeacoffee.png"
-										class="object-scale-down size-10"
-									/>
-									Buy me a coffee
-								</a> -->
 							</div>
 						</div>
 					</div>
