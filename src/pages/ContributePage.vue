@@ -9,7 +9,7 @@
 		<section class="min-h-screen py-28 px-6">
 			<div class="max-w-6xl mx-auto animate-fade-in-up">
 				<!-- Hero Section -->
-				<div class="text-center mb-20">
+				<div class="text-center mb-10">
 					<h1
 						class="text-4xl md:text-6xl font-bold text-slate-800 mb-4"
 					>
@@ -115,7 +115,7 @@
 							<div class="flex flex-col gap-4">
 								<button
 									@click="copyWallet('BTC')"
-									class="flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-colors"
+									class="flex items-center justify-center gap-2 px-6 py-5 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-colors"
 								>
 									<svg
 										class="w-5 h-5"
@@ -128,7 +128,7 @@
 									</svg>
 									BTC Wallet
 								</button>
-								<a
+								<!-- <a
 									href="https://buymeacoffee.com/scionsoftworks"
 									target="_blank"
 									class="flex items-center justify-center gap-2 px-6 py-2 bg-yellow-300 text-black rounded-lg transition-colors"
@@ -138,7 +138,7 @@
 										class="object-scale-down size-10"
 									/>
 									Buy me a coffee
-								</a>
+								</a> -->
 							</div>
 						</div>
 					</div>
@@ -192,14 +192,14 @@
 					</div>
 				</div>
 
-				<div class="flex flex-col lg:flex-row gap-8 px-4 mb-20">
+				<div class="flex flex-col justify-center lg:flex-row gap-8 px-4 mb-20 ">
 					<!-- Left Column - Code Contributors -->
-					<div class="lg:w-1/2 space-y-8">
+					<div class="space-y-8">
 						<div
 							class="p-8 bg-white rounded-2xl border-2 border-indigo-100"
 						>
-							<h3 class="text-2xl font-bold text-slate-800 mb-6">
-								Code Contributors
+							<h3 class="text-2xl font-bold text-slate-800 mb-6 text-center">
+								Our awesome code contributors
 							</h3>
 							<div class="grid grid-cols-3 md:grid-cols-4 gap-4">
 								<div
@@ -224,7 +224,7 @@
 					</div>
 
 					<!-- Right Column - Financial Supporters -->
-					<div class="lg:w-1/2 space-y-8">
+					<!-- <div class="lg:w-1/2 space-y-8">
 						<div
 							class="p-8 bg-white rounded-2xl border-2 border-indigo-100"
 						>
@@ -269,7 +269,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
