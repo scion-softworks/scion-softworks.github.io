@@ -9,23 +9,6 @@
 		</p>
 		<ul class="flex flex-wrap items-center gap-y-2 gap-x-6">
 			<li>
-				<router-link
-					to="/contacts"
-					class="flex items-center gap-1 font-sans text-base font-medium text-blue-gray-800 transition-colors hover:text-blue-600 focus:text-blue-600"
-				>
-					Contacts
-				</router-link>
-			</li>
-			<li>
-				<router-link
-					to="/contribute"
-					target="_blank"
-					class="flex items-center gap-1 font-sans text-base font-medium text-blue-gray-800 transition-colors hover:text-blue-600 focus:text-blue-600"
-				>
-					Contribute
-				</router-link>
-			</li>
-			<li>
 				<a
 					href="https://github.com/scion-softworks"
 					target="_blank"
