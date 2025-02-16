@@ -75,7 +75,7 @@
 
 		<!-- Projects Section -->
 		<section
-			class="py-16 px-6 bg-sky-50"
+			class="py-16 px-6 bg-sky-50 border-2 border-sky-200 border-opacity-50"
 			ref="featured"
 		>
 			<div class="max-w-6xl mx-auto">
