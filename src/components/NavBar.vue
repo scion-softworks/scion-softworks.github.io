@@ -24,10 +24,10 @@
 					Projects
 				</router-link>
 				<router-link
-					to="/docs"
+					to="/contribute"
 					class="text-blue-gray-800 hover:text-blue-600 transition-colors"
 				>
-					Documentation
+					Contribute
 				</router-link>
 				<a
 					href="https://discord.gg/YavbjPc8"
