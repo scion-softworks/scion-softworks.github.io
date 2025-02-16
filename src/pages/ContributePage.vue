@@ -109,8 +109,7 @@
 								Financial Support
 							</h3>
 							<p class="text-slate-600 mb-6">
-								Help sustain development through donations or
-								sponsorships
+								Help sustain development through donations!
 							</p>
 							<div class="flex flex-col gap-4">
 								<button
