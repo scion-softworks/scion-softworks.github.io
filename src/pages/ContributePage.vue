@@ -189,7 +189,10 @@
 							<h3 class="text-2xl font-bold text-slate-800 mb-6 text-center">
 								Our awesome code contributors
 							</h3>
+							<div v-if="!contributors" class="text-center text-xl opacity-50">🤷‍♂️ Could not fetch contributors</div>
+
 							<div class="grid grid-cols-3 md:grid-cols-4 gap-4">
+
 								<div
 									v-for="contributor in contributors"
 									:key="contributor.id"
@@ -301,7 +304,10 @@ export default {
 				this.contributors = data.contributors;
 				this.subscriptions = data.subscriptions;
 			} catch (error) {
-				alert('Failed to fetch contributors data')
+				this.contributors = null;
+				this.subscriptions = null;
+
+				console.error(error);
 			}
 			
 		}
