@@ -140,10 +140,7 @@ export default {
 	},
 	methods: {
 		scrollTo: (element) => {
-			window.scrollTo({
-				top: element.offsetTop,
-				behavior: 'smooth'
-			})
+			element.scrollIntoView({ behavior: 'smooth' });
 		}
 	}
 };
