@@ -20,14 +20,7 @@
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue';
-import FooterBar from '@/components/FooterBar.vue';
-
 export default {
 	name: 'ProjectsPage',
-	components: {
-		NavBar,
-		FooterBar
-	}
 };
 </script>
