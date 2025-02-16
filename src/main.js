@@ -3,6 +3,9 @@ import App from './App.vue';
 import './assets/tailwind.css';
 import router from './router.js';
 
+import NavBar from '@/components/NavBar.vue';
+import FooterBar from '@/components/FooterBar.vue';
+
 const app = createApp(App);
 
 app.use(router).mount('#app');
@@ -30,9 +33,12 @@ app.config.globalProperties.$projects = [
 		description:
 			'PriorityQueue is a simple priority queue typescript implementation with both MinHeapPriorityQueue and MaxHeapPriorityQueue. Both of them inherit the same base PriorityQueue class',
 		github: 'https://github.com/scion-softworks/PriorityQueue',
-		image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPMwSiKxkkg3XpuyWqi_GgixTA5BSKnRj0A&s',
+		image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPMwSiKxkkg3XpuyWqi_GgixTA5BSKnRj0A&s'
 	}
-]
+];
+
+app.component('NavBar', NavBar);
+app.component('FooterBar', FooterBar);
 
 app.mixin({
 	computed: {
@@ -40,7 +46,7 @@ app.mixin({
 			return this.$orgName;
 		},
 		projects() {
-			return this.$projects
+			return this.$projects;
 		}
 	}
 });
