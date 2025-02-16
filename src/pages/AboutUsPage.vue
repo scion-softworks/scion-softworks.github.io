@@ -120,7 +120,11 @@ export default {
 					{
 						icon: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Roblox_player_icon_black.svg",
 						link: "https://www.roblox.com/users/3305613465"
-					}
+					},
+					{
+						icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+						link: "https://github.com/artzified"
+					},
 				]
 			}, {
 				name: "cffex",
@@ -130,7 +134,12 @@ export default {
 					{
 						icon: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Roblox_player_icon_black.svg",
 						link: "https://www.roblox.com/users/2060048619"
-					}
+					},
+					{
+						icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+						link: "https://github.com/cffex"
+					},
+					
 				]
 			}],
 			values: [
