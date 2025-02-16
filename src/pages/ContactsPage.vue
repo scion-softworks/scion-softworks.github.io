@@ -78,12 +78,12 @@
 
 				<!-- Additional Contact Methods -->
 				<div class="max-w-2xl mx-auto mt-16">
-					<div class="text-center mb-12">
+					<div class="text-center mb-3">
 						<h3 class="text-2xl font-semibold text-slate-800 mb-4">Other Ways to Connect</h3>
 						<p class="text-slate-600">Or reach out through these platforms:</p>
 					</div>
 					<div class="flex justify-center gap-6">
-						<a href="https://github.com/scion-softworks" class="p-4 rounded-full bg-white border-2 border-indigo-100 hover:border-indigo-200 hover:bg-indigo-50 transition-colors">
+						<a href="https://github.com/scion-softworks" class="p-2 rounded-full bg-white border-2 border-indigo-100 hover:border-indigo-200 hover:bg-indigo-50 transition-colors">
 							<img src="@/assets/github-icon.png" class="w-12 h-12" />
 						</a>
 					</div>
