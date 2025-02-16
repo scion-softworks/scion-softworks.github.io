@@ -3,7 +3,6 @@
 		class="flex flex-col min-h-screen bg-gradient-to-b from-slate-50 to-indigo-50"
 	>
 		<NavBar />
-		<NotificationManager />
 
 		<!-- Contribution Section -->
 		<section class="min-h-screen py-28 px-6">
