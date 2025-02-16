@@ -10,8 +10,8 @@
 			{{ description }}
 		</p>
 		<div class="flex gap-3">
-			<a :href="github" target="_blank" class="text-blue-600 hover:text-blue-700">GitHub</a>
-			<a :href="docs" v-if="docs" target="_blank" class="text-blue-600 hover:text-blue-700">Docs</a>
+			<a :href="github" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-300">GitHub</a>
+			<a :href="docs" v-if="docs" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-300">Docs</a>
 		</div>
 	</div>
 </template>
