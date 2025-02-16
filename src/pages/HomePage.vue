@@ -110,15 +110,11 @@
 <script>
 import FeatureCard from '@/components/FeatureCard.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
-import NavBar from '@/components/NavBar.vue';
-import FooterBar from '@/components/FooterBar.vue';
 
 export default {
 	name: 'HomePage',
 	components: {
 		FeatureCard,
-		NavBar,
-		FooterBar,
 		ProjectCard
 	},
 	data() {

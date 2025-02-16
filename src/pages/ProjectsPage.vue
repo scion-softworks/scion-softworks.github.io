@@ -35,14 +35,10 @@
 
 <script>
 import ProjectCard from '@/components/ProjectCard.vue';
-import NavBar from '@/components/NavBar.vue';
-import FooterBar from '@/components/FooterBar.vue';
 
 export default {
 	name: 'ProjectsPage',
 	components: {
-		NavBar,
-		FooterBar,
 		ProjectCard
 	},
 	mounted() {

@@ -96,15 +96,8 @@
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue';
-import FooterBar from '@/components/FooterBar.vue';
-
 export default {
 	name: 'ContactsPage',
-	components: {
-		NavBar,
-		FooterBar
-	},
 	mounted() {
 		// Animation observer
 		const elements = document.querySelectorAll('.animate-fade-in-up');
