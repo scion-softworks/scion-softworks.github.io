@@ -9,7 +9,7 @@
 		<section class="min-h-screen py-28 px-6">
 			<div class="max-w-6xl mx-auto animate-fade-in-up">
 				<!-- Hero Section -->
-				<div class="text-center mb-10">
+				<div class="text-center mb-[4rem]">
 					<h1
 						class="text-4xl md:text-6xl font-bold text-slate-800 mb-4"
 					>
