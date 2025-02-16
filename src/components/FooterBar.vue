@@ -5,7 +5,7 @@
 		<p
 			class="block font-sans text-base font-medium text-blue-gray-800 opacity-60"
 		>
-			© 2024 {{ orgName }}. All rights reserved.
+			© 2025 {{ orgName }}. All rights reserved.
 		</p>
 		<ul class="flex flex-wrap items-center gap-y-2 gap-x-6">
 			<li>
