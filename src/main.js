@@ -18,7 +18,7 @@ app.config.globalProperties.$projects = [
 			'Parallelizer is a lightweight buffer-based parallelism solution with minimal overhead in mind',
 		github: 'https://github.com/scion-softworks/parallelizer',
 		image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJM0JCzFHFW2cqimo2V2NChHSijFxu8RNS4Q&s',
-		docs: 'scion-softworks.github.io/parallelizer'
+		docs: 'https://scion-softworks.github.io/parallelizer'
 	},
 	{
 		name: 'Muon',
