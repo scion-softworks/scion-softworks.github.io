@@ -178,12 +178,13 @@
 						<div
 							class="p-8 bg-white rounded-2xl border-2 border-indigo-100"
 						>
-							<h3 class="text-2xl font-bold text-slate-800 mb-6 text-center">
+							<h3 class="text-2xl font-bold text-slate-800 mb-2 text-center">
 								Our awesome code contributors
 							</h3>
+							<p class="text-center text-md opacity-50">May be inaccurate due to github's API quirks</p>
 							<div v-if="!contributors" class="text-center text-xl opacity-50">🤷‍♂️ Could not fetch contributors</div>
 
-							<div class="grid grid-cols-3 md:grid-cols-4 gap-4">
+							<div class="grid grid-cols-3 md:grid-cols-4 gap-4 pt-3">
 
 								<div
 									v-for="contributor in contributors"
