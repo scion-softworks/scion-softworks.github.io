@@ -15,7 +15,7 @@
 					<div
 						v-for="(project, index) in projects"
 						:key="index"
-						class="bg-white rounded-lg shadow-md overflow-hidden animate-fade-in-up"
+						class="bg-white rounded-lg shadow-md overflow-hidden animate-fade-in-up transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
 					>
 						<ProjectCard
 							:name="project.name"
