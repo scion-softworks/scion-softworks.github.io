@@ -149,4 +149,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+html, body {
+  overflow: auto !important;
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+</style>
