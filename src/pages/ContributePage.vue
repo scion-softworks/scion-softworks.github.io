@@ -188,11 +188,11 @@
 								<div
 									v-for="contributor in contributors"
 									:key="contributor.id"
-									class="flex flex-col items-center p-3 bg-indigo-50 rounded-lg"
+									class="flex flex-col items-center p-3 bg-indigo-50 rounded-lg transition-all duration-300 hover:drop-shadow-xl hover:-translate-y-2"
 								>
 									<img
 										:src="contributor.avatar_url"
-										class="w-12 h-12 rounded-full mb-2"
+										class="w-12 h-12 rounded-full mb-2 drop-shadow-xl"
 									/>
 									<a
 										:href="contributor.html_url"
