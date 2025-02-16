@@ -94,8 +94,7 @@
 							:name="project.name"
 							:description="project.description"
 							:image="project.image"
-							:github="project.github"
-							:docs="project.docs"
+							:links="project.links"
 						/>
 					</div>
 				</div>
