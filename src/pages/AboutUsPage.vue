@@ -116,10 +116,22 @@ export default {
 				name: "artzified",
 				avatar: "https://avatars.githubusercontent.com/u/101265482?v=4",
 				role: "owner",
+				socials: [
+					{
+						icon: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Roblox_player_icon_black.svg",
+						link: "https://www.roblox.com/users/3305613465"
+					}
+				]
 			}, {
 				name: "cffex",
 				avatar: "https://avatars.githubusercontent.com/u/118915241?v=4",
 				role: "owner",
+				socials: [
+					{
+						icon: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Roblox_player_icon_black.svg",
+						link: "https://www.roblox.com/users/2060048619"
+					}
+				]
 			}],
 			values: [
 				{
