@@ -5,22 +5,23 @@ import router from './router.js';
 
 import NavBar from '@/components/NavBar.vue';
 import FooterBar from '@/components/FooterBar.vue';
-
 import animateObserver from './plugins/animateObserver';
-
-import projects from '@/assets/data/projects.json'
-import team from '@/assets/data/team.json'
-import values from '@/assets/data/values.json'
 
 const app = createApp(App);
 
-app.use(animateObserver);
-app.use(router).mount('#app');
+const dataContext = require.context('@/assets/data/', false, /\.json$/);
 
-app.component('NavBar', NavBar);
-app.component('FooterBar', FooterBar);
+dataContext.keys().forEach((path) => {
+	const fileName = path.replace('./', '').replace('.json', '');
+	const module = dataContext(path);
+
+	app.config.globalProperties[`$${fileName}`] = module;
+});
 
 app.config.globalProperties.$orgName = 'Scion Softworks';
-app.config.globalProperties.$projects = projects;
-app.config.globalProperties.$team = team;
-app.config.globalProperties.$values = values;
+
+app.use(animateObserver);
+app.use(router)
+	.component('NavBar', NavBar)
+	.component('FooterBar', FooterBar)
+	.mount('#app');
