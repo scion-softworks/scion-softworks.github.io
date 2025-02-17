@@ -4,7 +4,7 @@
 		<NavBar />
 
 		<!-- Hero Section -->
-		<section class="pt-32 pb-16 px-6 bg-gradient-to-t from-white to-sky-50">
+		<section class="pt-32 pb-16 px-6 bg-gradient-to-t from-white to-sky-100">
 			<div class="select-none max-w-6xl mx-auto text-center">
 				<h1
 					class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up"
