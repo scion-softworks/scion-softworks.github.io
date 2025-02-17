@@ -7,11 +7,10 @@ module.exports = {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
-  darkMode: true, // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        'purple-900': '#1c092e',
         'black': '#0b0b0d',
       },
     },
