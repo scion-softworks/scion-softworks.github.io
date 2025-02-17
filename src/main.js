@@ -6,8 +6,11 @@ import router from './router.js';
 import NavBar from '@/components/NavBar.vue';
 import FooterBar from '@/components/FooterBar.vue';
 
+import animateObserver from './plugins/animateObserver';
+
 const app = createApp(App);
 
+app.use(animateObserver);
 app.use(router).mount('#app');
 
 app.config.globalProperties.$orgName = 'Scion Softworks';

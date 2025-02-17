@@ -114,24 +114,6 @@ export default {
 	data() {
 		return {};
 	},
-	mounted() {
-		const elements = document.querySelectorAll('.animate-fade-in-up');
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('visible');
-						observer.unobserve(entry.target);
-					}
-				});
-			},
-			{ threshold: 0.1 }
-		);
-
-		elements.forEach((element) => {
-			observer.observe(element);
-		});
-	},
 	methods: {
 		scrollTo: (element) => {
 			element.scrollIntoView({ behavior: 'smooth' });
