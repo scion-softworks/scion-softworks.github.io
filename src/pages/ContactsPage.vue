@@ -38,10 +38,10 @@
 								Chat on Discord
 							</h3>
 							<div
-								class="flex items-center justify-center gap-3 mb-4"
+								class="flex items-center justify-center gap-1 mb-4"
 							>
 								<span
-									class="text-lg font-mono px-4 py-2 bg-indigo-50 text-indigo-700 rounded-lg"
+									class="text-lg font-mono px-2 py-1 bg-indigo-50 text-indigo-700 rounded-lg"
 								>
 									@artzified
 								</span>
