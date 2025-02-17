@@ -20,6 +20,7 @@ html, body, #app {
 	opacity: 0;
 	transform: translateY(20px);
 	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+	will-change: opacity, transform;
 }
 
 .animate-fade-in-up.visible {
