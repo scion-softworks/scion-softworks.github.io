@@ -21,6 +21,6 @@
 
 <script>
 export default {
-	name: 'ProjectsPage',
+	name: 'ProjectsPage'
 };
 </script>

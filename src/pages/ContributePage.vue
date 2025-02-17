@@ -115,7 +115,10 @@
 									@click="copyWallet('BTC')"
 									class="flex items-center justify-center gap-2 px-6 py-5 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-colors"
 								>
-									<img src="@/assets/bitcoin.svg" class="w-6 h-6" />
+									<img
+										src="@/assets/bitcoin.svg"
+										class="w-6 h-6"
+									/>
 									BTC Wallet
 								</button>
 							</div>
@@ -171,20 +174,32 @@
 					</div>
 				</div>
 
-				<div class="flex flex-col justify-center lg:flex-row gap-8 px-4 mb-20 ">
+				<div
+					class="flex flex-col justify-center lg:flex-row gap-8 px-4 mb-20"
+				>
 					<!-- Left Column - Code Contributors -->
 					<div class="space-y-8">
 						<div
 							class="p-8 bg-white rounded-2xl border-2 border-indigo-100"
 						>
-							<h3 class="text-2xl font-bold text-slate-800 mb-2 text-center">
+							<h3
+								class="text-2xl font-bold text-slate-800 mb-2 text-center"
+							>
 								Our awesome code contributors
 							</h3>
-							<p class="text-center text-md opacity-50">May be outdated due to github's API quirks</p>
-							<div v-if="!contributors" class="text-center text-xl opacity-50">🤷‍♂️ Could not fetch contributors</div>
+							<p class="text-center text-md opacity-50">
+								May be outdated due to github's API quirks
+							</p>
+							<div
+								v-if="!contributors"
+								class="text-center text-xl opacity-50"
+							>
+								🤷‍♂️ Could not fetch contributors
+							</div>
 
-							<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
-
+							<div
+								class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4"
+							>
 								<div
 									v-for="contributor in contributors"
 									:key="contributor.id"
@@ -201,7 +216,10 @@
 									>
 										{{ contributor.login }}
 									</a>
-									<p class="opacity-50 text-center text-sm">{{ contributor.contributions }} commits made</p>
+									<p class="opacity-50 text-center text-sm">
+										{{ contributor.contributions }} commits
+										made
+									</p>
 								</div>
 							</div>
 						</div>
@@ -302,7 +320,6 @@ export default {
 
 				console.error(error);
 			}
-			
 		}
 	},
 	mounted() {
