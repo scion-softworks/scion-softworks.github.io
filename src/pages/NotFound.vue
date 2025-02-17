@@ -21,6 +21,6 @@
 
 <script>
 export default {
-	name: 'ProjectsPage'
+	name: 'NotFound'
 };
 </script>
