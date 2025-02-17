@@ -37,10 +37,10 @@
 					</div>
 
 					<div class="grid grid-cols-2 gap-4">
-						<div class="h-48 bg-indigo-100 rounded-xl"></div>
-						<div class="h-64 bg-indigo-100 rounded-xl mt-8"></div>
-						<div class="h-64 bg-indigo-100 rounded-xl"></div>
-						<div class="h-48 bg-indigo-100 rounded-xl mt-8"></div>
+						<div class="h-48 bg-indigo-100 rounded-xl hidden md:block"></div>
+						<div class="h-64 bg-indigo-100 rounded-xl mt-8 hidden md:block"></div>
+						<div class="h-64 bg-indigo-100 rounded-xl hidden md:block"></div>
+						<div class="h-48 bg-indigo-100 rounded-xl mt-8 hidden md:block"></div>
 					</div>
 				</div>
 

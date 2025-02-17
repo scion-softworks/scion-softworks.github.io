@@ -5,7 +5,7 @@
 		<NavBar />
 
 		<!-- Contribution Section -->
-		<section class="min-h-screen py-28 px-6">
+		<section class="min-h-screen py-32 md:py-28 px-6">
 			<div class="max-w-6xl mx-auto animate-fade-in-up">
 				<!-- Hero Section -->
 				<div class="text-center mb-[4rem]">
@@ -183,7 +183,7 @@
 							<p class="text-center text-md opacity-50">May be outdated due to github's API quirks</p>
 							<div v-if="!contributors" class="text-center text-xl opacity-50">🤷‍♂️ Could not fetch contributors</div>
 
-							<div class="grid grid-cols-3 md:grid-cols-4 gap-4 pt-3">
+							<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-3">
 
 								<div
 									v-for="contributor in contributors"
@@ -197,11 +197,11 @@
 									<a
 										:href="contributor.html_url"
 										target="_blank"
-										class="text-sm font-mono text-indigo-600 hover:underline text-center"
+										class="text-sm p-2 font-mono text-indigo-600 hover:underline text-center"
 									>
 										{{ contributor.login }}
 									</a>
-									<p class="opacity-50">{{ contributor.contributions }} commits made</p>
+									<p class="opacity-50 text-center text-sm">{{ contributor.contributions }} commits made</p>
 								</div>
 							</div>
 						</div>
