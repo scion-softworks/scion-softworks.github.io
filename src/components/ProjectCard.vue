@@ -1,6 +1,7 @@
 <template>
 	<img
 		:src="image"
+		loading="lazy"
 		alt="Project screenshot"
 		class="w-full h-48 object-scale-down"
 	/>

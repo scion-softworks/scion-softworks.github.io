@@ -14,7 +14,11 @@
 					target="_blank"
 					class="flex items-center gap-1 pr-2 py-3 lg:py-0 font-sans text-base font-medium text-blue-gray-800 transition-colors hover:text-blue-600 focus:text-blue-600"
 				>
-					<img src="@/assets/github-icon.png" class="w-6 h-6" />
+					<img
+						src="@/assets/github-icon.png"
+						loading="lazy"
+						class="w-6 h-6"
+					/>
 					GitHub
 				</a>
 			</li>
