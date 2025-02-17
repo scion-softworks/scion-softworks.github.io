@@ -183,7 +183,7 @@
 							<p class="text-center text-md opacity-50">May be outdated due to github's API quirks</p>
 							<div v-if="!contributors" class="text-center text-xl opacity-50">🤷‍♂️ Could not fetch contributors</div>
 
-							<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-3">
+							<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
 
 								<div
 									v-for="contributor in contributors"
