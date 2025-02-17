@@ -110,10 +110,10 @@
 							<p class="text-slate-600 mb-6">
 								Help sustain development through donations!
 							</p>
-							<div class="flex flex-col gap-4">
+							<div class="flex flex-col gap-2">
 								<button
 									@click="copyWallet('BTC')"
-									class="flex items-center justify-center gap-2 px-6 py-5 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-colors"
+									class="flex items-center justify-center gap-2 px-6 py-4 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-colors"
 								>
 									<img
 										src="@/assets/img/bitcoin.svg"
@@ -121,6 +121,17 @@
 									/>
 									BTC Wallet
 								</button>
+								<a
+									href="https://www.roblox.com/games/10031431160"
+									target="_blank"
+									class="flex items-center justify-center gap-2 px-6 py-4 bg-yellow-400 text-black rounded-lg hover:bg-yellow-500 transition-colors"
+								>
+									<img
+										src="@/assets/img/robux.svg"
+										class="w-6 h-6"
+									/>
+									Donate Robux
+							</a>
 							</div>
 						</div>
 					</div>
