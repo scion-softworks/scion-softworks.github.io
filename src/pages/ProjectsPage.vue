@@ -4,7 +4,7 @@
 		<NavBar />
 
 		<!-- Projects Section -->
-		<section class="py-32 px-6 bg-sky-100">
+		<section class="min-h-screen py-32 px-6 bg-sky-100">
 			<div class="max-w-6xl mx-auto">
 				<h2
 					class="text-3xl font-bold text-center mb-12 animate-fade-in-up"
