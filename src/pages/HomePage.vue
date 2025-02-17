@@ -4,9 +4,7 @@
 		<NavBar />
 
 		<!-- Hero Section -->
-		<section
-			class="pt-32 pb-16 px-6 bg-gradient-to-b from-sky-100 to-white"
-		>
+		<section class="pt-32 pb-16 px-6 bg-gradient-to-t from-white to-sky-50">
 			<div class="select-none max-w-6xl mx-auto text-center">
 				<h1
 					class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up"
@@ -45,7 +43,7 @@
 		</section>
 
 		<!-- Features Section -->
-		<section class="py-16 px-6 bg-white">
+		<section class="py-16 px-6 bg-gradient-to-b from-white to-sky-50">
 			<div class="max-w-6xl mx-auto">
 				<h2
 					class="text-3xl font-bold text-center mb-12 animate-fade-in-up"
@@ -74,10 +72,7 @@
 		</section>
 
 		<!-- Projects Section -->
-		<section
-			class="py-16 px-6 bg-sky-50 border-t-2 border-sky-200 border-opacity-50"
-			ref="featured"
-		>
+		<section class="py-16 px-6 bg-sky-50" ref="featured">
 			<div class="max-w-6xl mx-auto">
 				<h2
 					class="text-3xl font-bold text-center mb-12 animate-fade-in-up"
@@ -146,9 +141,10 @@ export default {
 </script>
 
 <style>
-html, body {
-  overflow: auto !important;
-  -ms-overflow-style: none !important;  /* IE and Edge */
-  scrollbar-width: none !important;  /* Firefox */
+html,
+body {
+	overflow: auto !important;
+	-ms-overflow-style: none !important; /* IE and Edge */
+	scrollbar-width: none !important; /* Firefox */
 }
 </style>
