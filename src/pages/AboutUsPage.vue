@@ -80,7 +80,7 @@
 					</h2>
 					<div class="grid md:grid-cols-3 gap-8">
 						<div
-							v-for="member in team"
+							v-for="member in $team"
 							:key="member.name"
 							class="group relative p-8 bg-white rounded-2xl border-2 border-indigo-100 hover:border-indigo-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
 						>
@@ -126,7 +126,7 @@
 					</h2>
 					<div class="grid md:grid-cols-3 gap-8">
 						<div
-							v-for="value in values"
+							v-for="value in $values"
 							:key="value.title"
 							class="p-6 text-center"
 						>
@@ -154,87 +154,7 @@
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue';
-import FooterBar from '@/components/FooterBar.vue';
-
 export default {
-	name: 'AboutPage',
-	components: {
-		NavBar,
-		FooterBar
-	},
-	data() {
-		return {
-			team: [
-				{
-					name: 'artzified',
-					avatar: 'https://avatars.githubusercontent.com/u/101265482?v=4',
-					role: 'owner',
-					socials: [
-						{
-							icon: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Roblox_player_icon_black.svg',
-							link: 'https://www.roblox.com/users/3305613465'
-						},
-						{
-							icon: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
-							link: 'https://github.com/artzified'
-						}
-					]
-				},
-				{
-					name: 'cffex',
-					avatar: 'https://avatars.githubusercontent.com/u/118915241?v=4',
-					role: 'owner',
-					socials: [
-						{
-							icon: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Roblox_player_icon_black.svg',
-							link: 'https://www.roblox.com/users/2060048619'
-						},
-						{
-							icon: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
-							link: 'https://github.com/cffex'
-						}
-					]
-				}
-			],
-			values: [
-				{
-					title: 'Innovation First',
-					description:
-						'Pushing boundaries to deliver cutting-edge solutions',
-					emoji: '💡'
-				},
-				{
-					title: 'Quality',
-					description:
-						'Never compromising on quality in every detail',
-					emoji: '🛡️'
-				},
-				{
-					title: 'Community Driven',
-					description:
-						'Building with and for the people who matter most',
-					emoji: '💖'
-				}
-			]
-		};
-	},
-	mounted() {
-		// Reuse animation logic
-		const elements = document.querySelectorAll('.animate-fade-in-up');
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('visible');
-						observer.unobserve(entry.target);
-					}
-				});
-			},
-			{ threshold: 0.1 }
-		);
-
-		elements.forEach((element) => observer.observe(element));
-	}
+	name: 'AboutPage'
 };
 </script>

@@ -13,7 +13,7 @@
 				</h2>
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					<div
-						v-for="(project, index) in projects"
+						v-for="(project, index) in $projects"
 						:key="index"
 						class="bg-white rounded-lg shadow-md overflow-hidden animate-fade-in-up transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
 					>

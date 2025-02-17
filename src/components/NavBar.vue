@@ -7,7 +7,7 @@
 		>
 			<a href="/">
 				<span class="text-2xl font-bold text-blue-gray-800">{{
-					orgName
+					$orgName
 				}}</span>
 			</a>
 			<div class="flex gap-6 mt-2 md:mt-0">
