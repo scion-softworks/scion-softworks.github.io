@@ -28,7 +28,7 @@
 									class="p-4 bg-indigo-100 rounded-full group-hover:bg-indigo-200 transition-colors"
 								>
 									<img
-										src="@/assets/discord-icon.svg"
+										src="@/assets/img/discord-icon.svg"
 										loading="lazy"
 										class="w-12 h-12"
 									/>
@@ -107,7 +107,7 @@
 								class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors shadow-sm hover:shadow-md"
 							>
 								<img
-									src="@/assets/profile.png"
+									src="@/assets/img/profile.png"
 									loading="lazy"
 									class="w-6 h-6"
 								/>
@@ -133,7 +133,7 @@
 							class="p-2 rounded-full bg-white border-2 border-indigo-100 hover:border-indigo-200 hover:bg-indigo-50 transition-colors"
 						>
 							<img
-								src="@/assets/github-icon.png"
+								src="@/assets/img/github-icon.png"
 								loading="lazy"
 								class="w-12 h-12"
 							/>
@@ -150,25 +150,6 @@
 <script>
 export default {
 	name: 'ContactsPage',
-	mounted() {
-		// Animation observer
-		const elements = document.querySelectorAll('.animate-fade-in-up');
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('visible');
-						observer.unobserve(entry.target);
-					}
-				});
-			},
-			{ threshold: 0.1 }
-		);
-
-		elements.forEach((element) => {
-			observer.observe(element);
-		});
-	},
 	methods: {
 		copyDiscord() {
 			navigator.clipboard

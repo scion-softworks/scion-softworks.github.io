@@ -116,7 +116,7 @@
 									class="flex items-center justify-center gap-2 px-6 py-5 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-colors"
 								>
 									<img
-										src="@/assets/bitcoin.svg"
+										src="@/assets/img/bitcoin.svg"
 										class="w-6 h-6"
 									/>
 									BTC Wallet
@@ -164,7 +164,7 @@
 									class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
 								>
 									<img
-										src="@/assets/discord-icon.svg"
+										src="@/assets/img/discord-icon.svg"
 										class="w-5 h-5"
 									/>
 									Join Discord
@@ -321,23 +321,6 @@ export default {
 				console.error(error);
 			}
 		}
-	},
-	mounted() {
-		// Reuse animation logic from contacts page
-		const elements = document.querySelectorAll('.animate-fade-in-up');
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('visible');
-						observer.unobserve(entry.target);
-					}
-				});
-			},
-			{ threshold: 0.1 }
-		);
-
-		elements.forEach((element) => observer.observe(element));
 	}
 };
 </script>
