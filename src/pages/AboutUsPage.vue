@@ -30,7 +30,7 @@
 				<div class="grid md:grid-cols-2 gap-12 items-center mb-20 px-4">
 					<div class="relative group">
 						<div
-							class="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"
+							class="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-[800ms]"
 						></div>
 						<div
 							class="relative bg-white rounded-2xl p-8 border-2 border-indigo-100"
