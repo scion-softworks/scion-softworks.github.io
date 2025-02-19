@@ -168,7 +168,7 @@
 								<div
 									class="absolute bottom-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity"
 								>
-									<div class="text-7xl">
+									<div class="text-7xl select-none">
 										{{ value.emoji }}
 									</div>
 								</div>
