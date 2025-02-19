@@ -131,7 +131,7 @@
 										class="w-6 h-6"
 									/>
 									Donate Robux
-							</a>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -188,101 +188,199 @@
 				<div
 					class="flex flex-col justify-center lg:flex-row gap-8 px-4 mb-20"
 				>
-					<!-- Left Column - Code Contributors -->
+					<!-- Code Contributors Section -->
 					<div class="space-y-8">
 						<div
-							class="p-8 bg-white rounded-2xl border-2 border-indigo-100"
+							class="p-8 bg-white rounded-2xl border-2 border-indigo-100 shadow-lg"
 						>
-							<h3
-								class="text-2xl font-bold text-slate-800 mb-2 text-center"
-							>
-								Our awesome code contributors
-							</h3>
-							<p class="text-center text-md opacity-50">
-								May be outdated due to github's API quirks
-							</p>
-							<div
-								v-if="!contributors"
-								class="text-center text-xl opacity-50"
-							>
-								🤷‍♂️ Could not fetch contributors
+							<div class="text-center mb-8">
+								<h3
+									class="text-3xl font-bold text-slate-800 mb-2"
+								>
+									Code Contributors
+								</h3>
+								<p class="text-slate-600 max-w-xl mx-auto">
+									These brilliant minds have shaped our
+									projects through their amazing
+									contributions. Hover to see their impact!
+								</p>
 							</div>
 
 							<div
-								class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4"
+								v-if="contributors === undefined && contributors !== null"
+								class="flex justify-center"
 							>
 								<div
+									class="animate-pulse text-indigo-600 text-lg"
+								>
+									Loading contributors...
+								</div>
+							</div>
+
+							<div
+								class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+							>
+								<a
 									v-for="contributor in contributors"
 									:key="contributor.id"
-									class="flex flex-col items-center p-3 bg-indigo-50 rounded-lg transition-all duration-300 hover:drop-shadow-xl hover:-translate-y-2"
+									:href="contributor.html_url"
+									target="_blank"
+									class="relative group transform transition-all duration-300 hover:scale-105 hover:z-10"
 								>
-									<img
-										:src="contributor.avatar_url"
-										class="w-12 h-12 rounded-full mb-2 drop-shadow-xl"
-									/>
-									<a
-										:href="contributor.html_url"
-										target="_blank"
-										class="text-sm p-2 font-mono text-indigo-600 hover:underline text-center"
+									<div
+										class="flex flex-col items-center p-4 rounded-xl bg-gradient-to-b from-indigo-50 to-white border-2"
+										:class="{
+											'border-purple-300':
+												contributor.contributions > 100,
+											'border-blue-200':
+												contributor.contributions >
+													50 &&
+												contributor.contributions <=
+													100,
+											'border-indigo-100':
+												contributor.contributions <= 50
+										}"
 									>
-										{{ contributor.login }}
-									</a>
-									<p class="opacity-50 text-center text-sm">
-										{{ contributor.contributions }} commits
-										made
-									</p>
-								</div>
+										<!-- Contribution Crown -->
+										<div
+											v-if="
+												contributor.contributions > 200
+											"
+											class="absolute -top-3 left-1/2 -translate-x-1/2 text-yellow-400"
+										>
+											<svg
+												class="w-8 h-8"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												/>
+											</svg>
+										</div>
+
+										<img
+											:src="contributor.avatar_url"
+											class="w-16 h-16 rounded-full mb-3 border-4 border-white shadow-lg"
+											:class="{
+												'border-purple-200':
+													contributor.contributions >
+													100,
+												'border-blue-100':
+													contributor.contributions >
+														50 &&
+													contributor.contributions <=
+														100,
+												'border-indigo-50':
+													contributor.contributions <=
+													50
+											}"
+										/>
+
+										<div class="text-center">
+											<p
+												class="font-semibold text-slate-800 mb-1"
+											>
+												{{ contributor.login }}
+											</p>
+											<div
+												class="flex items-center justify-center space-x-1"
+											>
+												<svg
+													class="w-4 h-4 text-green-600"
+													fill="none"
+													stroke="currentColor"
+													viewBox="0 0 24 24"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M13 10V3L4 14h7v7l9-11h-7z"
+													/>
+												</svg>
+												<span
+													class="text-sm font-medium text-slate-600"
+												>
+													{{
+														contributor.contributions
+													}}
+													commits
+												</span>
+											</div>
+										</div>
+
+										<!-- Contribution Level Badge -->
+										<div
+											class="mt-3 px-2 py-1 text-xs font-medium rounded-full"
+											:class="{
+												'bg-purple-100 text-purple-800':
+													contributor.contributions >
+													100,
+												'bg-blue-100 text-blue-800':
+													contributor.contributions >
+														50 &&
+													contributor.contributions <=
+														100,
+												'bg-indigo-100 text-indigo-800':
+													contributor.contributions <=
+													50
+											}"
+										>
+											{{
+												contributor.contributions > 200
+													? 'Pioneer'
+													: contributor.contributions >
+													100
+													? 'Core Maintainer'
+													: contributor.contributions >
+													50
+													? 'Active Contributor'
+													: 'Innovation Spark'
+											}}
+										</div>
+									</div>
+
+									<!-- Hover Card -->
+									<div
+										class="absolute hidden group-hover:block w-48 p-4 mt-2 -left-10 bg-white rounded-lg shadow-xl border border-indigo-50"
+									>
+										<div class="text-center">
+											<p class="text-xs text-slate-600">
+												{{
+													contributor.contributions >
+													200
+														? '💡 Pioneer'
+														: contributor.contributions >
+														100
+														? '🔥 Core Developer'
+														: contributor.contributions >
+														50
+														? '🌟 Active Contributor'
+														: '🌱 Rising Star'
+												}}
+											</p>
+											<div
+												class="mt-1 h-1 bg-indigo-100 rounded-full"
+											>
+												<div
+													class="h-full bg-indigo-600 rounded-full"
+													:style="{
+														width:
+															Math.min(
+																contributor.contributions /
+																	2,
+																100
+															) + '%'
+													}"
+												></div>
+											</div>
+										</div>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
-
-					<!-- Right Column - Financial Supporters -->
-					<!-- <div class="lg:w-1/2 space-y-8">
-						<div
-							class="p-8 bg-white rounded-2xl border-2 border-indigo-100"
-						>
-							<h3 class="text-2xl font-bold text-slate-800 mb-6">
-								Financial Supporters
-							</h3>
-							<div class="space-y-6">
-								<a
-									v-if="subscriptions.length === 0"
-									class="text-xl underline text-blue-600"
-									href="https://buymeacoffee.com/scionsoftworks"
-									target="_blank"
-								>
-									Be the first to support us
-								</a>
-
-								<div
-									v-for="(supporter, index) in subscriptions"
-									:key="index"
-									class="p-4 bg-indigo-50 rounded-lg flex items-center gap-4"
-								>
-									<div class="flex-shrink-0">
-										<div
-											class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center"
-										>
-											<span
-												class="text-indigo-600 text-xl"
-												>💎</span
-											>
-										</div>
-									</div>
-									<div>
-										<h4
-											class="font-semibold text-slate-800"
-										>
-											{{ supporter.payer_name }}
-										</h4>
-										<p class="text-sm text-slate-600">
-											{{ supporter.message }}
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> -->
 				</div>
 			</div>
 		</section>
@@ -295,8 +393,7 @@ export default {
 	name: 'ContributePage',
 	data() {
 		return {
-			contributors: [],
-			subscriptions: []
+			contributors: undefined,
 		};
 	},
 	created() {
@@ -321,13 +418,9 @@ export default {
 				);
 				const data = await response.json();
 
-				console.log(data);
-
 				this.contributors = data.contributors;
-				this.subscriptions = data.subscriptions;
 			} catch (error) {
 				this.contributors = null;
-				this.subscriptions = null;
 
 				console.error(error);
 			}
