@@ -4,8 +4,8 @@
 	<div class="flex flex-col items-center justify-center h-screen">
 		<p class="text-7xl sm:text-8xl md:text-9xl lg:text-[9rem] pb-16 text-nowrap hidden min-[320px]:block">¯\_(ツ)_/¯</p>
 		<h1 class="text-2xl sm:text-4xl font-semibold text-blue-800 text-center">404 Not Found</h1>
-		<p class="text-blue-gray-600 pb-4 m-2 text-md sm:text-lg text-center">
-			The page you're looking for doesn't exist <i>yet</i>
+		<p class="text-blue-gray-600 pb-4 m-2 text-md sm:text-xl text-center">
+			Oopsies! The page you're looking for doesn't exist <i>yet</i>
 		</p>
 
 		<router-link
