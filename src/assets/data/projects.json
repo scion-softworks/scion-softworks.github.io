@@ -21,7 +21,7 @@
 	},
 	{
 		"name": "PriorityQueue",
-		"description": "PriorityQueue is a simple priority queue typescript implementation with both MinHeapPriorityQueue and MaxHeapPriorityQueue. Both of them inherit the same base PriorityQueue class",
+		"description": "PriorityQueue is a simple priority queue typescript implementation with both MinHeapPriorityQueue and MaxHeapPriorityQueue. Abstracted to PriorityQueue class",
 		"links": {
 			"Github": "https://github.com/scion-softworks/PriorityQueue",
 			"NPM": "https://www.npmjs.com/package/@rbxts/priorityqueue"
