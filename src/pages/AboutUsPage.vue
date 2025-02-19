@@ -116,32 +116,71 @@
 				</div>
 
 				<!-- Values Section -->
-				<div
-					class="bg-white rounded-2xl p-8 border-2 border-indigo-100 mb-20"
-				>
-					<h2
-						class="text-3xl font-bold text-slate-800 mb-12 text-center"
-					>
-						Our Core Values
-					</h2>
-					<div class="grid md:grid-cols-3 gap-8">
-						<div
-							v-for="value in $values"
-							:key="value.title"
-							class="p-6 text-center"
+				<div class="relative py-20 mb-20 overflow-hidden">
+					<div
+						class="absolute inset-0 opacity-5 pattern-dots-slate-300"
+					></div>
+					<div class="relative max-w-7xl mx-auto px-4">
+						<h2
+							class="text-4xl font-bold text-slate-800 mb-16 text-center"
 						>
+							The Pillars We Build On
+						</h2>
+
+						<div class="grid md:grid-cols-3 gap-8">
 							<div
-								class="w-16 h-16 mx-auto bg-indigo-100 rounded-xl mb-4 flex items-center justify-center"
+								v-for="(value, index) in $values"
+								:key="value.title"
+								class="group relative p-8 bg-white rounded-2xl border border-slate-200 hover:border-indigo-200 transition-all duration-300 hover:-translate-y-2 shadow-[0_8px_24px_-15px_rgba(79,70,229,0.3)]"
 							>
-								<div class="text-4xl text-indigo-600">
-									{{ value.emoji }}
+								<div
+									class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity"
+								></div>
+
+								<div class="flex items-start mb-6">
+									<div
+										class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center mr-4"
+									>
+										<span class="text-3xl">{{
+											value.emoji
+										}}</span>
+									</div>
+									<div>
+										<div
+											class="text-sm font-semibold text-indigo-600 mb-1"
+										>
+											Pillar 0{{ index + 1 }}
+										</div>
+										<h3
+											class="text-2xl font-bold text-slate-800"
+										>
+											{{ value.title }}
+										</h3>
+									</div>
+								</div>
+
+								<p
+									class="text-slate-600 relative pl-2 border-l-4 border-indigo-100 group-hover:border-indigo-300 transition-colors"
+								>
+									{{ value.description }}
+								</p>
+
+								<div
+									class="absolute bottom-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity"
+								>
+									<div class="text-7xl">
+										{{ value.emoji }}
+									</div>
 								</div>
 							</div>
-							<h3 class="text-xl font-bold text-slate-800 mb-2">
-								{{ value.title }}
-							</h3>
-							<p class="text-slate-600">
-								{{ value.description }}
+						</div>
+
+						<div class="mt-16 text-center">
+							<p class="text-lg text-slate-600 max-w-2xl mx-auto">
+								These aren't just words on a screen - they're
+								the battle-tested principles that shape every
+								line of code, every design decision, and every
+								community interaction.
 							</p>
 						</div>
 					</div>
