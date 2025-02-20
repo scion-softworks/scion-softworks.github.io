@@ -207,7 +207,10 @@
 							</div>
 
 							<div
-								v-if="contributors === undefined && contributors !== null"
+								v-if="
+									contributors === undefined &&
+									contributors !== null
+								"
 								class="flex justify-center"
 							>
 								<div
@@ -248,9 +251,16 @@
 											"
 											class="glow-yellow-400 absolute -top-6 left-1/2 -translate-x-1/2 text-yellow-400"
 										>
-										<svg class="w-12 h-12" fill="#facc15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M2 19h20v2H2zM2 5l5 3.5L12 2l5 6.5L22 5v12H2zm2 3.841V15h16V8.841l-3.42 2.394L12 5.28l-4.58 5.955z"/>
-</svg>
+											<svg
+												class="w-12 h-12"
+												fill="#facc15"
+												viewBox="0 0 24 24"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M2 19h20v2H2zM2 5l5 3.5L12 2l5 6.5L22 5v12H2zm2 3.841V15h16V8.841l-3.42 2.394L12 5.28l-4.58 5.955z"
+												/>
+											</svg>
 										</div>
 
 										<img
@@ -325,10 +335,10 @@
 												contributor.contributions > 200
 													? 'Pioneer'
 													: contributor.contributions >
-													100
+													  100
 													? 'Core Maintainer'
 													: contributor.contributions >
-													50
+													  50
 													? 'Active Contributor'
 													: 'Innovation Spark'
 											}}
@@ -346,10 +356,10 @@
 													200
 														? '💡 Pioneer'
 														: contributor.contributions >
-														100
+														  100
 														? '🔥 Core Developer'
 														: contributor.contributions >
-														50
+														  50
 														? '🌟 Active Contributor'
 														: '🌱 Rising Star'
 												}}
@@ -387,7 +397,7 @@ export default {
 	name: 'ContributePage',
 	data() {
 		return {
-			contributors: undefined,
+			contributors: undefined
 		};
 	},
 	created() {
