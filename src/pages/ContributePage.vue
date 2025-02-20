@@ -335,10 +335,10 @@
 												contributor.contributions > 200
 													? 'Pioneer'
 													: contributor.contributions >
-													  100
+													100
 													? 'Core Maintainer'
 													: contributor.contributions >
-													  50
+													50
 													? 'Active Contributor'
 													: 'Rising Star'
 											}}
@@ -356,10 +356,10 @@
 													200
 														? '💡 Pioneer'
 														: contributor.contributions >
-														  100
+														100
 														? '🔥 Core Developer'
 														: contributor.contributions >
-														  50
+														50
 														? '🌟 Active Contributor'
 														: '🌱 Rising Star'
 												}}
