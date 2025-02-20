@@ -340,7 +340,7 @@
 													: contributor.contributions >
 													  50
 													? 'Active Contributor'
-													: 'Innovation Spark'
+													: 'Rising Star'
 											}}
 										</div>
 									</div>
