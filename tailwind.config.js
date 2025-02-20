@@ -18,5 +18,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: []
+  plugins: [
+    require('./src/plugins/tailwind/glow.js'),
+  ]
 }
