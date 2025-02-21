@@ -19,9 +19,9 @@ export default {
 				mutation.addedNodes.forEach((node) => {
 					if (node.nodeType === Node.ELEMENT_NODE) {
 						// Check element and its children
-						const elements = node.querySelectorAll(
+						const elements = Array.from(node.querySelectorAll(
 							'.animate-fade-in-up'
-						);
+						));
 						if (node.classList.contains('animate-fade-in-up')) {
 							elements.push(node);
 						}
