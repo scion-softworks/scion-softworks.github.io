@@ -1,0 +1,16 @@
+name: SEO Audit
+on: [schedule]
+jobs:
+    audit:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: treosh/lighthouse-ci-action@v3
+              with:
+                  urls: |
+                      https://scionsoftworks.github.io
+                      https://scionsoftworks.github.io/#/about-us
+                      https://scionsoftworks.github.io/#/contacts
+                      https://scionsoftworks.github.io/#/projects
+                      https://scionsoftworks.github.io/#/contribute
+                      https://scionsoftworks.github.io/#/404
+                  uploadArtifacts: true
