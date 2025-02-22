@@ -108,19 +108,9 @@
 								Financial Support
 							</h3>
 							<p class="text-slate-600 mb-6">
-								Help sustain development through donations!
+								Support our projects with donations! Your support help keeps us building, maintaining, and improving
 							</p>
 							<div class="flex flex-col gap-2">
-								<button
-									@click="copyWallet('BTC')"
-									class="flex items-center justify-center gap-2 px-6 py-4 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-colors"
-								>
-									<img
-										src="@/assets/img/bitcoin.svg"
-										class="w-6 h-6"
-									/>
-									BTC Wallet
-								</button>
 								<a
 									href="https://www.roblox.com/games/10031431160"
 									target="_blank"
@@ -405,16 +395,6 @@ export default {
 	},
 
 	methods: {
-		copyWallet(type) {
-			const wallets = {
-				BTC: 'bc1qlvapre5fuk3ujsk5vqnlnq7v0f9cu54n6g6wjl'
-			};
-			navigator.clipboard
-				.writeText(wallets[type])
-				.then(() => alert(`${type} address copied!`))
-				.catch(() => alert('Copy failed', 'error'));
-		},
-
 		async fetchData() {
 			try {
 				const response = await fetch(
