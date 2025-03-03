@@ -11,10 +11,10 @@ jobs:
             - uses: treosh/lighthouse-ci-action@v3
               with:
                   urls: |
-                      https://scionsoftworks.github.io
-                      https://scionsoftworks.github.io/#/about-us
-                      https://scionsoftworks.github.io/#/contacts
-                      https://scionsoftworks.github.io/#/projects
-                      https://scionsoftworks.github.io/#/contribute
-                      https://scionsoftworks.github.io/#/404
+                      https://scion-softworks.github.io
+                      https://scion-softworks.github.io/#/about-us
+                      https://scion-softworks.github.io/#/contacts
+                      https://scion-softworks.github.io/#/projects
+                      https://scion-softworks.github.io/#/contribute
+                      https://scion-softworks.github.io/#/404
                   uploadArtifacts: true
