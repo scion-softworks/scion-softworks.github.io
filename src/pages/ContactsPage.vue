@@ -1,4 +1,16 @@
 <template>
+	<Head>
+		<title>Scion Softworks - Contacts</title>
+		<meta
+			name="description"
+			content="Reach out to us with any questions, feedback, or collaboration opportunities. We're always happy to hear from you!"
+		/>
+		<meta
+			name="keywords"
+			content="roblox, lua, luau, roblox studio, game development, open source, tools, tooling, contacts, discord"
+		/>
+	</Head>
+
 	<div
 		class="flex flex-col min-h-screen bg-gradient-to-b from-slate-50 to-indigo-50"
 	>
@@ -166,27 +178,7 @@ export default {
 </script>
 
 <script setup>
-import { useHead } from '@vueuse/head';
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
-const canonicalUrl = `https://scion-softworks.com${route.fullPath}`
-
-useHead({
-	title: 'Contacts',
-	meta: [
-		{
-			name: 'description',
-			content: 'Reach out to us through Discord, Roblox, and more!'
-		}
-	],
-	link: [
-		{
-			rel: 'canonical',
-			href: canonicalUrl
-		}
-	]
-});
+import { Head } from '@unhead/vue/components'
 </script>
 
 <style>

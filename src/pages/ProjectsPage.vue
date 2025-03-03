@@ -1,4 +1,16 @@
 <template>
+	<Head>
+		<title>Scion Softworks - Contribute</title>
+		<meta
+			name="description"
+			content="Check out our open-source projects on GitHub and contribute to the development of free tools for Roblox developers"
+		/>
+		<meta
+			name="keywords"
+			content="roblox, lua, luau, roblox studio, game development, open source, tools, tooling, contribute, projects, collaborate"
+		/>
+	</Head>
+
 	<div class="flex flex-col min-h-screen">
 		<!-- Add to navigation -->
 		<NavBar />
@@ -44,25 +56,5 @@ export default {
 </script>
 
 <script setup>
-import { useHead } from '@vueuse/head';
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
-const canonicalUrl = `https://scion-softworks.com${route.fullPath}`
-
-useHead({
-	title: 'Projects',
-	meta: [
-		{
-			name: 'description',
-			content: 'Check out our featured projects!'
-		}
-	],
-	link: [
-		{
-			rel: 'canonical',
-			href: canonicalUrl
-		}
-	]
-});
+import { Head } from '@unhead/vue/components'
 </script>

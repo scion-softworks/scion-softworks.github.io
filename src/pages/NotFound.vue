@@ -1,4 +1,15 @@
 <template>
+	<Head>
+		<title>Scion Softworks - 404</title>
+		<meta
+			name="description"
+			content="Oops! That page doesn't exist yet."
+		/>
+		<meta
+			name="keywords"
+			content="roblox, lua, luau, roblox studio, game development, open source, tools, tooling, 404, not found"
+		/>
+	</Head>
 	<NavBar />
 
 	<div class="flex flex-col items-center justify-center h-screen">
@@ -34,20 +45,5 @@ export default {
 </script>
 
 <script setup>
-import { useHead } from '@vueuse/head';
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
-const canonicalUrl = `https://scion-softworks.com${route.fullPath}`
-
-useHead({
-	title: '404',
-	meta: [],
-	link: [
-		{
-			rel: 'canonical',
-			href: canonicalUrl
-		}
-	]
-});
+import { Head } from '@unhead/vue/components'
 </script>

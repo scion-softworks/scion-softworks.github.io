@@ -1,4 +1,16 @@
 <template>
+	<Head>
+		<title>Scion Softworks - Contribute</title>
+		<meta
+			name="description"
+			content="Contribute to our projects and help shape the future of our open-source software. Whether you're a developer, designer, or enthusiast, there's a way for everyone to contribute!"
+		/>
+		<meta
+			name="keywords"
+			content="roblox, lua, luau, roblox studio, game development, open source, tools, tooling, contribute, robux, support"
+		/>
+	</Head>
+
 	<div
 		class="flex flex-col min-h-screen bg-gradient-to-b from-slate-50 to-indigo-50"
 	>
@@ -435,25 +447,5 @@ export default {
 </script>
 
 <script setup>
-import { useHead } from '@vueuse/head';
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
-const canonicalUrl = `https://scion-softworks.com${route.fullPath}`
-
-useHead({
-	title: 'Contribute',
-	meta: [
-		{
-			name: 'description',
-			content: 'Make an impact by contributing to our projects!'
-		}
-	],
-	link: [
-		{
-			rel: 'canonical',
-			href: canonicalUrl
-		}
-	]
-});
+import { Head } from '@unhead/vue/components'
 </script>
