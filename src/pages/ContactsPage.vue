@@ -62,6 +62,7 @@
 									@click="copyDiscord"
 									class="p-2 rounded-lg hover:bg-indigo-100 transition-colors tooltip"
 									data-tip="Copy to clipboard"
+									aria-label="Copy discord username to clipboard"
 								>
 									<svg
 										class="w-6 h-6 text-indigo-500"
