@@ -1,4 +1,4 @@
-name: SEO Audit
+name: Audit
 on:
     schedule:
         - cron: '*/10 * * * *'
