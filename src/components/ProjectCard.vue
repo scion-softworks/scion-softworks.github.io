@@ -2,7 +2,7 @@
 	<img
 		:src="image"
 		loading="lazy"
-		alt="{{ name }} screenshot"
+		:alt="name + 'screenshot'"
 		class="w-full h-48 object-scale-down"
 	/>
 	<div class="p-6">
