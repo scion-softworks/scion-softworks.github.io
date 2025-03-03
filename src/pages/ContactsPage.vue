@@ -30,6 +30,7 @@
 									<img
 										src="@/assets/img/discord-icon.svg"
 										loading="lazy"
+										alt="Discord Icon"
 										class="w-12 h-12"
 									/>
 								</div>
@@ -87,6 +88,7 @@
 									<img
 										src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-86B49D020CEDCA41F9FD12827AEC621E-Png/150/150/AvatarHeadshot/Png/noFilter"
 										loading="lazy"
+										alt="Roblox Avatar Headshot"
 										class="w-32 h-32 rounded-full border-4 border-white shadow-lg group-hover:scale-105 transition-transform"
 									/>
 									<div
@@ -109,6 +111,7 @@
 								<img
 									src="@/assets/img/profile.png"
 									loading="lazy"
+									alt="Profile Icon"
 									class="w-6 h-6"
 								/>
 								Visit Profile
@@ -135,6 +138,7 @@
 							<img
 								src="@/assets/img/github-icon.png"
 								loading="lazy"
+								alt="GitHub Icon"
 								class="w-12 h-12"
 							/>
 						</a>

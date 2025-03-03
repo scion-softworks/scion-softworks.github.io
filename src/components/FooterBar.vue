@@ -17,6 +17,7 @@
 					<img
 						src="@/assets/img/github-icon.png"
 						loading="lazy"
+						alt="Github Icon"
 						class="w-6 h-6"
 					/>
 					GitHub

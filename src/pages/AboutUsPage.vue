@@ -88,7 +88,10 @@
 								<div
 									class="w-32 h-32 mx-auto rounded-full bg-indigo-100 mb-4 overflow-hidden"
 								>
-									<img :src="member.avatar" />
+									<img
+										:src="member.avatar"
+										:alt="member.name"
+									/>
 								</div>
 								<h3 class="text-xl font-bold text-slate-800">
 									{{ member.name }}
@@ -107,6 +110,7 @@
 									<img
 										:src="social.icon"
 										loading="lazy"
+										:alt="member.name + social.name"
 										class="w-6 h-6"
 									/>
 								</a>

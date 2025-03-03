@@ -126,6 +126,7 @@
 									>
 										<img
 											src="@/assets/img/robux.svg"
+											alt="Robux Icon"
 											class="w-6 h-6"
 										/>
 										Donate Robux
@@ -176,6 +177,7 @@
 									>
 										<img
 											src="@/assets/img/discord-icon.svg"
+											alt="Discord Icon"
 											class="w-5 h-5"
 										/>
 										Join Discord
@@ -269,6 +271,7 @@
 
 											<img
 												:src="contributor.avatar_url"
+												:alt="contributor.name + Avatar"
 												class="w-16 h-16 rounded-full mb-3 border-4 border-white shadow-lg"
 												:class="{
 													'glow-purple-300':
@@ -340,10 +343,10 @@
 													200
 														? 'Pioneer'
 														: contributor.contributions >
-														100
+														  100
 														? 'Core Maintainer'
 														: contributor.contributions >
-														50
+														  50
 														? 'Active Contributor'
 														: 'Rising Star'
 												}}
@@ -363,10 +366,10 @@
 														200
 															? '💡 Pioneer'
 															: contributor.contributions >
-															100
+															  100
 															? '🔥 Core Developer'
 															: contributor.contributions >
-															50
+															  50
 															? '🌟 Active Contributor'
 															: '🌱 Rising Star'
 													}}
