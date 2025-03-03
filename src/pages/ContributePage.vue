@@ -369,7 +369,7 @@
 															100
 															? '🔥 Core Developer'
 															: contributor.contributions >
-															 50
+															50
 															? '🌟 Active Contributor'
 															: '🌱 Rising Star'
 													}}
