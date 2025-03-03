@@ -164,7 +164,7 @@ export default {
 			{ property: 'og:description', content: 'Free open source tools for Roblox developers and Luau programmers' },
 		],
 		link: [
-			{ rel: 'canonical', href: 'https://scionsoftworks.com/' }
+			{ rel: 'canonical', href: 'https://scion-softworks.com/' }
 		]
 	},
 };
