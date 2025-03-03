@@ -17,4 +17,4 @@ jobs:
                       https://scion-softworks.github.io/#/projects
                       https://scion-softworks.github.io/#/contribute
                       https://scion-softworks.github.io/#/404
-                  uploadArtifacts: true
+                  uploadArtifacts: false
