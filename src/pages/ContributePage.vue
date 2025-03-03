@@ -433,3 +433,27 @@ export default {
 	}
 };
 </script>
+
+<script setup>
+import { useHead } from '@vueuse/head';
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const canonicalUrl = `https://scion-softworks.com${route.fullPath}`
+
+useHead({
+	title: 'Contribute',
+	meta: [
+		{
+			name: 'description',
+			content: 'Make an impact by contributing to our projects!'
+		}
+	],
+	link: [
+		{
+			rel: 'canonical',
+			href: canonicalUrl
+		}
+	]
+});
+</script>

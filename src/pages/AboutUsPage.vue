@@ -201,3 +201,27 @@ export default {
 	name: 'AboutPage'
 };
 </script>
+
+<script setup>
+import { useHead } from '@vueuse/head';
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const canonicalUrl = `https://scion-softworks.com${route.fullPath}`
+
+useHead({
+	title: 'About us',
+	meta: [
+		{
+			name: 'description',
+			content: 'We are a passionate team of creators dedicated to building meaningful open-source software that simplifies your creative process'
+		}
+	],
+	link: [
+		{
+			rel: 'canonical',
+			href: canonicalUrl
+		}
+	]
+});
+</script>

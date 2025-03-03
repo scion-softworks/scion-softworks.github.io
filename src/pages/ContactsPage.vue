@@ -165,6 +165,30 @@ export default {
 };
 </script>
 
+<script setup>
+import { useHead } from '@vueuse/head';
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const canonicalUrl = `https://scion-softworks.com${route.fullPath}`
+
+useHead({
+	title: 'Contacts',
+	meta: [
+		{
+			name: 'description',
+			content: 'Reach out to us through Discord, Roblox, and more!'
+		}
+	],
+	link: [
+		{
+			rel: 'canonical',
+			href: canonicalUrl
+		}
+	]
+});
+</script>
+
 <style>
 .hover\:bg-sky-100:hover {
 	background-color: #e0f2fe;

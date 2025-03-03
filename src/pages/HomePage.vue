@@ -153,21 +153,39 @@ export default {
 			element.scrollIntoView({ behavior: 'smooth' });
 		}
 	},
-
-	metaInfo: {
-		title: 'Scion Softworks - Open Source Roblox Development Tools',
-		meta: [
-			{ name: 'description', content: 'Community-driven open source tools for Roblox developers. Free Luau libraries, Roblox Studio plugins, and type-safe solutions for game development.' },
-			{ name: 'keywords', content: 'roblox, lua, luau, roblox studio, game development, open source, tools, tooling' },
-			// Open Graph
-			{ property: 'og:title', content: 'Scion Softworks - Roblox Developer Tools' },
-			{ property: 'og:description', content: 'Free open source tools for Roblox developers and Luau programmers' },
-		],
-		link: [
-			{ rel: 'canonical', href: 'https://scion-softworks.com/' }
-		]
-	},
 };
+</script>
+
+<script setup>
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Scion Softworks - Open Source Roblox Development Tools',
+  meta: [
+    {
+      name: 'description',
+      content: 'Community-driven open source tools for Roblox developers. Free Luau libraries, Roblox Studio plugins, and type-safe solutions for game development.'
+    },
+    {
+      name: 'keywords',
+      content: 'roblox, lua, luau, roblox studio, game development, open source, tools, tooling'
+    },
+    {
+      property: 'og:title',
+      content: 'Scion Softworks - Roblox Developer Tools'
+    },
+    {
+      property: 'og:description',
+      content: 'Free open source tools for Roblox developers and Luau programmers'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://scion-softworks.com/'
+    }
+  ]
+})
 </script>
 
 <style>
