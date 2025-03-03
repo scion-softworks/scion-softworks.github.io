@@ -29,11 +29,6 @@
 				itemscope
 				itemtype="https://schema.org/Organization"
 			>
-				<meta itemprop="name" content="Scion Softworks" />
-				<meta
-					itemprop="description"
-					content="Open source tools for Roblox developers specializing in Luau and Roblox Studio development"
-				/>
 				<div class="select-none max-w-6xl mx-auto text-center">
 					<h1
 						class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up"
