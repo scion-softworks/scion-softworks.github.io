@@ -271,7 +271,7 @@
 
 											<img
 												:src="contributor.avatar_url"
-												:alt="contributor.name + Avatar"
+												:alt="contributor.name + ' Avatar'"
 												class="w-16 h-16 rounded-full mb-3 border-4 border-white shadow-lg"
 												:class="{
 													'glow-purple-300':

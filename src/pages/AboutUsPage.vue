@@ -110,7 +110,7 @@
 									<img
 										:src="social.icon"
 										loading="lazy"
-										:alt="member.name + social.name"
+										:alt="`${member.name} ${social.name}`"
 										class="w-6 h-6"
 									/>
 								</a>
