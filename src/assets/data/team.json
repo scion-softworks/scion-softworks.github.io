@@ -5,10 +5,12 @@
 		"role": "founder",
 		"socials": [
 			{
+				"name": "Roblox",
 				"icon": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Roblox_player_icon_black.svg",
 				"link": "https://www.roblox.com/users/3305613465"
 			},
 			{
+				"name": "GitHub",
 				"icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
 				"link": "https://github.com/artzified"
 			}
@@ -20,10 +22,12 @@
 		"role": "co-founder",
 		"socials": [
 			{
+				"name": "Roblox",
 				"icon": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Roblox_player_icon_black.svg",
 				"link": "https://www.roblox.com/users/2060048619"
 			},
 			{
+				"name": "GitHub",
 				"icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
 				"link": "https://github.com/cffex"
 			}
