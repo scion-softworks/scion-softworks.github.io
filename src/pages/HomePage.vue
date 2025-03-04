@@ -126,7 +126,7 @@
 						<article
 							v-for="(project, index) in $projects"
 							:key="index"
-							class="bg-white rounded-lg shadow-md overflow-hidden animate-fade-in-up transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+							class="group relative p-8 rounded-2xl border-2 border-indigo-100 hover:border-indigo-200 bg-white shadow-md overflow-hidden animate-fade-in-up transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
 							itemscope
 							itemtype="https://schema.org/SoftwareSourceCode"
 						>
